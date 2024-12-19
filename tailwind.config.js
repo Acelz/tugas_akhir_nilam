@@ -1,13 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/preline/dist/*.js",
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    require('daisyui'),
-  ],
-}
+  plugins: [require("preline/plugin")],
+};

@@ -7,7 +7,9 @@ const firebaseConfig = {
   storageBucket: "fir-aplikasi-tugas-akhir.firebasestorage.app",
   messagingSenderId: "674782002429",
   appId: "1:674782002429:web:fddfa1e103e050ad2ad294",
-  measurementId: "G-RWMCFM2QL5"
+  measurementId: "G-RWMCFM2QL5",
 };
 
-const app = initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig);
+
+export default app;

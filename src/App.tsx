@@ -1,20 +1,21 @@
+import PageHeader from "./components/layout/PageHeader";
+import PageMain from "./components/layout/PageMain";
+import PageFooter from "./components/layout/PageFooter";
+
 function App() {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="min-h-screen bg-white artboard phone-3">
-          <header>
-            <h1>Header</h1>
-          </header>
-          <main>
-            <div>
-              <h2>Main</h2>
-            </div>
-          </main>
-          <footer>
-            <h3>Footer</h3>
-          </footer>
-        </div>
+      <div className="min-h-screen bg-white artboard">
+        <header>
+          <PageHeader />
+        </header>
+        <main>
+          <h2 className="my-4 text-3xl text-center">Deskripsi Tanaman Nilam</h2>
+          <PageMain />
+        </main>
+        <footer>
+          <PageFooter />
+        </footer>
       </div>
     </>
   );
